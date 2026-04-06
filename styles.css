@@ -64,6 +64,21 @@ img {
   border-bottom: 1px solid rgba(217, 210, 195, 0.8);
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--accent);
+  color: #ffffff;
+  border-radius: 0 0 0.75rem 0.75rem;
+  z-index: 20;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -200,7 +215,8 @@ p {
 
 .profile-card,
 .panel,
-.research-item {
+.research-item,
+.not-found-card {
   background: var(--surface);
   border: 1px solid rgba(217, 210, 195, 0.9);
   border-radius: 18px;
@@ -277,6 +293,16 @@ dd {
 .research-meta {
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.not-found {
+  min-height: calc(100vh - 14rem);
+  display: grid;
+  align-items: center;
+}
+
+.not-found-card {
+  padding: 2rem;
 }
 
 .site-footer {
